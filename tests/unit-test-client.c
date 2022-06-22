@@ -95,7 +95,7 @@ int test_iomodule()
     // uint32_t old_response_to_usec;
 
     printf("--- IO Module Test ---\n");
-    mb = modbus_new_tcp("192.168.1.2", 502);
+    mb = modbus_new_tcp(IOBOX_IP, 502);
     if(NULL == mb)
     {
         printf("~Failed to Create new TCP Connection\n");
